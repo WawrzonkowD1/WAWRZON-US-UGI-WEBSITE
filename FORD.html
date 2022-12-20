@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html LANG="pl">
+<head>
+	<meta charset="utf-8">
+	<title>WAWRZON USŁUGI BUDOWLANE</title>
+	<meta name="description" content="Serwis poświecony firmie Wawrzon usługi budowlane Dawid Wawrzonkowski"/>
+	<meta name="keywords" content="wyburzenia, burzenie, koparka, utylizacja, renowacja"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet"href="style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+         
+         var numer = Math.floor(Math.random()*5)+1;
+        
+        function schowaj()
+        {
+            $("#topbarL").fadeOut(500);
+        }
+
+        function zmienslajd()
+        {
+            numer++; if (numer>2) numer=1;
+
+            var plik = "<img src=\"slajdy/slajd" + numer + ".jpg\"/>";
+
+            document.getElementById("topbarL").innerHTML = plik;
+
+            $("#topbarL").fadeIn(500);
+
+            setTimeout("zmienslajd()",2000);
+            setTimeout("schowaj()",1500);     
+        }
+    
+    </script>
+
+
+
+</head>
+<body onload="zmienslajd()">
+	<div id="conteiner">
+		<div id="logo">
+			WAWRZON USŁUGI BUDOWLANE
+		</div>
+
+		<div id="menu">
+			<div class= "option">Doświadczenie</div>
+			<div class= "option">Kontakt</div>
+			<div style= "clear:both";></div>
+		</div>
+		<div id="topbar">
+			<div id="topbarL">
+					
+			</div>
+			<div id="topbarR">
+				<span class="bigtitle">WAWRZON USŁUGI BUDOWLANE</span>
+				<div style="height: 15px;"></div>
+				Jesteśmy tu po to aby pomóc państwu zorganizować wyburzenie i zutylizować niepotrzebne cześci budynku lub nawet całe budynki.
+				<br/>Zapraszam do kontaktu:) 
+			</div>
+			<div style="clear:both;"></div>
+			
+		</div>
+		<div id="sidebar">
+			<div class= "optionL">Doświadczenie</div>
+			<div class= "optionL">Kontakt</div>
+			<div style= "clear:both";></div>
+		</div>
+
+		<div id="content">
+			<span class="bigtitle">WAWRZON USŁUGI BUDOWLANE</span>
+				<div style="height: 15px;"></div>
+				<div class="dottedline"></div>
+			Nasza oferta to szczególnie wyburzenia, równies specjalizujemy się w wyrównywaniu terenu i przywróceniu naturalnego wyglądu w skałd czego wchodzi przywiezienie ziemi, wyrównanie terenu i posianie trawy.
+			W celu uzystania wstępnej wyceney i szczegółowych informacji zapraszam do kontaktu telefonicznego +48 692623099.<br/>
+			<div class="dottedline"></div>
+			<img src="wyburzenie/pic1.jpg"/>
+		</div>
+		<div id="footer">
+			WAWRZON USŁUGI BUDOWLANE to firma z przyszłością. Strona powstała w 2022r. &copy; Wszelkie prawa zastrzeżone
+		</div>
+	</div>
+	 
+</body>
+
+
+
+</html>
